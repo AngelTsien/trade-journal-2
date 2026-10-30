@@ -1,0 +1,28 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>交易日志 2.0 · 量子空间</title>
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#05030f">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="交易日志2.0">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon-180.png"><link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="space.css"></head><body class="space">
+<div id="space"></div>
+<div id="hudTop"><div class="brand">⚛ 交易日志 <b>2.0</b><small id="hudSum"></small></div>
+ <nav id="hudMenu"><button data-p="dash">📊 仪表盘</button><button data-p="trades">📋 交易</button><button data-p="stats">📈 统计</button><button data-p="daily">📅 日记</button><button data-p="import">📥 导入</button><button data-p="accounts">👛 账户</button><button data-p="backup">💾 备份</button><button id="homeBtn" title="回到全景">🌌</button></nav></div>
+<div id="hint">拖动旋转 · 滚轮/双指缩放 · 悬停粒子看交易 · 点原子看详情</div>
+<div id="info" class="glass"></div>
+<div id="hud" class="glass"><button id="hudClose" class="ghost">✕ 收起面板</button>
+<div class="app">
+ <aside class="rail" id="rail"></aside>
+ <nav class="nav" id="nav"></nav>
+ <main class="main"><header class="top"><button class="menu" id="menuBtn">☰</button><input id="search" placeholder="🔍 搜索品种 / 策略 / 备注"><div class="range"><input type="date" id="from"><span>至</span><input type="date" id="to"><button class="ghost" id="clr">全部</button></div></header>
+  <div id="view"></div></main>
+ <aside class="side" id="side"></aside>
+</div></div>
+<div class="modal" id="modal"><div class="card mbox" id="mbox"></div></div>
+<script src="lib/chart.js"></script><script src="lib/xlsx.js"></script><script src="core.js"></script><script src="app.js"></script>
+<script type="importmap">{"imports":{"three":"./lib/three/three.module.js","three/addons/":"./lib/three/jsm/"}}</script>
+<script type="module" src="space.js"></script>
+<script>setTimeout(()=>{if(!window.TJSpaceOK)document.body.className='flat'},9000)</script>
+<script>if('serviceWorker' in navigator&&location.protocol!=='file:')navigator.serviceWorker.register('sw.js');</script>
+</body></html>

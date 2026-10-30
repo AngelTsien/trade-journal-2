@@ -1,0 +1,4 @@
+Instrument,Direction,Opening date,Closing date,Opening price,Closing price,Quantity,Stop loss,Take profit,Overnight fee,Profit/Loss,Currency
+GOLD,BUY,2026-10-07 08:00:00,2026-10-07 12:00:00,2660.5,2655.5,1,2650.5,2690,0,-5.00,USD
+US100,SELL,2026-10-08 14:30:00,2026-10-08 18:00:00,20200,20120,0.5,20250,20050,0,40.00,USD
+OIL_CRUDE,BUY,2026-10-09 09:00:00,2026-10-10 09:00:00,71.00,72.00,10,70.50,73.00,-1.20,10.00,USD
